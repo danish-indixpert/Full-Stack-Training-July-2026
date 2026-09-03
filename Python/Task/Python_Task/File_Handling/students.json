@@ -1,0 +1,22 @@
+[
+    {
+        "uid": "7022de21-26",
+        "email": "danish@gmail.com",
+        "name": "danish",
+        "age": 19,
+        "mobile": "8516880302",
+        "address": "dholpur",
+        "pincode": 476221,
+        "qualification": "B."
+    },
+    {
+        "uid": "943f4b79-22",
+        "email": "soni@gmail.com",
+        "name": "soni",
+        "age": 20,
+        "mobile": 9999999999,
+        "address": "gurgaon",
+        "pincode": 3180000,
+        "qualification": "Bsc"
+    }
+]

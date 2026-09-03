@@ -1,0 +1,38 @@
+data={   
+    "id":1001,
+    "name":"Danish",
+    "address":"Dholpur",
+    "email":"danish@gmail.com",
+    "contact":8938948934
+    }
+{
+    "id":8269,
+    "name":"Abhinav",
+    "address":"Morena",
+    "email":"abhi@gmail.com",
+    "contact":9876378467
+}
+{
+    "id":7398,
+    "name":'Rahul',
+    "address":'Gwalior', 
+    "email":'rahul@gmail.com',
+    "contact":7893789838
+}
+{
+    "id":1203,
+    "name":'Rohan',
+    "address":'Bhopal', 
+    "email":'roha@gmail.com',
+    "contact":6289888938
+}
+{
+    "id":1203,
+    "name":'Rohan',
+    "address":'Bhopal', 
+    "email":'roha@gmail.com',
+    "contact":7299037478
+}
+
+print(data)
+print(type(data))

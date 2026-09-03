@@ -1,0 +1,27 @@
+from datetime import date, datetime
+print("".center(30,'='))
+print(' Time '.center(30,'-'))
+print("".center(30,'='))
+now=datetime.today()
+print("Time: ",now)
+
+today=date.today()
+print("".center(30,'='))
+print(' Date '.center(30,'-'))
+print("".center(30,'='))
+print("Today Datetime   : ",today)
+print("Year             : ",today.year)
+print("Month            : ",today.month)
+print("Day              : ",today.day)
+print("Day-Name         : ",today.strftime("%A"))
+
+dob=input("Enter Date Of Birth: ")
+
+user_dob = datetime.strptime(dob,"%d-%m-%Y")
+print("".center(30,'='))
+print(' Date Of Birth '.center(30,'-'))
+print("".center(30,'='))
+print("Birth Of Year    : ",user_dob.year)
+print("Birth Of Month   : ",user_dob.month)
+print("Birth Of Day     : ",user_dob.day)
+print("Born Day-Name    : ",user_dob.strftime("%A"))
