@@ -9,7 +9,7 @@ else:
 
 #disctionary main if else program with input user age.
 dis={}
-dis["age"]=int(input("Enter Your Age: "))
+dis["age"]=int(input("Enter Yours Age: "))
 if dis["age"]>18:
     print("Vote Is Eligible")
 else:
