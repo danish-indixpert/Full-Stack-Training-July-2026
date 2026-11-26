@@ -40,6 +40,5 @@ printf("\nOutput |\n");
     Subtraction();
     Multiply();
     Division();
-
 return 0;
 }

@@ -4,7 +4,6 @@ int main(){
     int a2[3]={6,7,8};
     int a3[8];
     int i;
-
     for(int i=0;i<5;i++)
     {
 

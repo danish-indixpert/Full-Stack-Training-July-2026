@@ -13,7 +13,6 @@ printf("\n4. Exit");
 
 int main()
 {
-
     int player_id;
     char name[50]; 
     char country_name[50];

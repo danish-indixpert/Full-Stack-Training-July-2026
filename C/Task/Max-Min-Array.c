@@ -10,10 +10,8 @@ int main()
         {
             if(num[i]>maximum)
         {
-
             maximum=num[i];
         }
-
             if(num[i]<minimum)
         {
             minimum=num[i];

@@ -5,9 +5,7 @@ int main() {
     int total = 0;
     char subjects[5][20] = {"sub1", "sub2", "sub3", "sub4", "sub5"};
     float percentage;
-
     printf("Enter marks:\n");
-
     for(i = 0; i < 5; i++) 
     {
         printf("%s: ", subjects[i]);

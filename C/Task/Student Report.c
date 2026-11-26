@@ -6,9 +6,7 @@ int main()
     char student_name[20];
     char email[30];
     char address[50];
-
 printf("\n===+=== +ENTER STUDENT DETAILS+ ===+===\n");
-
    
             printf("Please Enter Student_Name :");
             scanf("%s", &student_name);

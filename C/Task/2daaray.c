@@ -5,7 +5,6 @@ char student_name[3][20];
 char subject_name[4][10];
 int marks[3][3];
 int i,j,k;
-
 printf("student details");
 
 for(int i=0;i<3;i++)

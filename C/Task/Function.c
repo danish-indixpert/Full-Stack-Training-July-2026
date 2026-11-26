@@ -10,13 +10,11 @@ int add()
     printf("\nSum| %d\n",a+b);
 }
 
-
 int subtraction()
 {
     int a = 1, b = 2;
     printf("Subtraction| %d\n", a-b);
 }
-
 
 //int division()
 //{
