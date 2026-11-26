@@ -1,2 +1,2 @@
-from Authentication import zoom_menu
+from authentication import zoom_menu
 zoom_menu()

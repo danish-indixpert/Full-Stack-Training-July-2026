@@ -11,7 +11,7 @@ try:
     
 except Exception as e:
     print("Please Enter Correct Value Only!")
-    with open("Error.Log",'w') as newfile:
+    with open("error.Log",'w') as newfile:
         newfile.write(f"{e} path on\n {str(os.getcwd())} \n {str(datetime.datetime.now())}\n")
        
        

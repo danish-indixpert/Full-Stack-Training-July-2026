@@ -16,7 +16,7 @@ def register():
                 raise ValueError("Invalid Id")
         except:
             print("Wrong Uid!")
-        with open("System.log",'a') as uii:
+        with open("system.log",'a') as uii:
             uii.write(f"[{str(datetime.datetime.now())}] [ERROR] - Invalid Your Uid!!!\n")
     while True:
         try:
@@ -27,7 +27,7 @@ def register():
                 print("Invalid Name")            
         except:
             print("Please Alphabet Value Only!")
-        with open("System.log",'a') as nn:
+        with open("system.log",'a') as nn:
             nn.write(f"[{str(datetime.datetime.now())}] [ERROR] - Invalid Your Name!!! {uid}\n")
     while True:
         try:
@@ -38,7 +38,7 @@ def register():
                 print("Invalid Age")
         except:
             print("Please Integer (Digit) Value Only!")
-        with open("System.log",'a') as aa:
+        with open("system.log",'a') as aa:
             aa.write(f"[{str(datetime.datetime.now())}] [ERROR] - Invalid Your Age!!! {uid}\n")
     while True:
         try:
@@ -49,7 +49,7 @@ def register():
                 print("Invalid email")
         except:
             print("Please Correct Email ID!")
-        with open("System.log",'a') as ee:
+        with open("system.log",'a') as ee:
             ee.write(f"[{str(datetime.datetime.now())}] [ERROR] - Invalid Your Email!!! {uid}\n")
     while True:
         try:
@@ -60,7 +60,7 @@ def register():
                 print("Invalid Addresss")
         except:
             print("Please Alphabet Value Only!")
-        with open("System.log",'a') as add:
+        with open("system.log",'a') as add:
             add.write(f"[{str(datetime.datetime.now())}] [EROOR] - Invalid Your Address!!! {uid}\n")
     while True:
         try:
@@ -71,7 +71,7 @@ def register():
                 print("Invalid country")
         except:
             print("Plsease Correct Your Country")
-        with open("System.log",'a') as cou:
+        with open("system.log",'a') as cou:
             cou.write(f"[{str(datetime.datetime.now())}] [ERROR] - Invalid Your Country!!! {uid}\n")
     with open("students_output.txt",'a') as register:
             register.write(f"{uid} | {name} | {age} | {email} | {address} | {country}\n")
@@ -86,9 +86,9 @@ def register():
             }
             
             data_one.append(registeration)    
-            with open("Students_.json",'w') as student_registration:
+            with open("students_.json",'w') as student_registration:
                 json.dump(data_one,student_registration,indent=4)
-            with open("System.log",'a') as reg:
+            with open("system.log",'a') as reg:
                 reg.write(f"[{str(datetime.datetime.now())}] [INFO] - Registration Successful {uid}\n")    
             print("Registeration Successful!")
 def update():
@@ -110,13 +110,13 @@ def update():
                             new_name=input("Enter You New Name: ")
                             if new_name.isalpha():
                                 update_data["name"]=new_name
-                                with open("Students_.json","w") as one_name:
+                                with open("students_.json","w") as one_name:
                                     json.dump(data_one,one_name,indent=4)
                                 print("Your Name Is Update")
                                 break
                             else:
                                 print("Invalid name")
-                            with open("System.log",'a') as n_one:
+                            with open("system.log",'a') as n_one:
                                 n_one.write(f"[{str(datetime.datetime.now())}] [INFO] - Student Name Updated {update_uid}")
                         except:
                             print("Invalid [Error]")
@@ -125,13 +125,13 @@ def update():
                             new_age=input("Enter your new age: ")
                             if new_age.isdigit():
                                 update_data["age"]=new_age
-                                with open("Students_.json","w") as one_age:
+                                with open("students_.json","w") as one_age:
                                     json.dump(data_one,one_age,indent=4)
                                 print("Your Age Is Update")
                                 break
                             else:
                                 print("Invalid Age")
-                            with open("System.log",'a') as a_one:
+                            with open("system.log",'a') as a_one:
                                 a_one.write(f"[{str(datetime.datetime.now())}] [INFO] - Student Age Updated {update_uid}")
                         except:
                             print("Invalid [Error]")
@@ -140,13 +140,13 @@ def update():
                             new_address=input("Enter you new address: ")
                             if new_address.isalnum():
                                 update_data["address"]=new_address
-                                with open("Students_.json","w") as one_address:
+                                with open("students_.json","w") as one_address:
                                     json.dump(data_one,one_address,indent=4)
                                 print("Your Address Is Update")
                                 break
                             else:
                                 print("Invalid Address")
-                            with open("System.log",'a') as add_one:
+                            with open("system.log",'a') as add_one:
                                 add_one.write(f"[{str(datetime.datetime.now())}] [INFO] - Student Address Updated {update_uid}")
                         except:
                             print("Invalid [Error]")
@@ -155,13 +155,13 @@ def update():
                             new_country=input("Enter you new country: ")
                             if new_country.strip():
                                 update_data["address"]=new_country
-                                with open("Students_.json","w") as one_country:
+                                with open("students_.json","w") as one_country:
                                     json.dump(data_one,one_country,indent=4)
                                 print("Your Country Is Update")
                                 break
                             else:
                                 print("Invalid Country")
-                            with open("System.log",'a') as c_one:
+                            with open("system.log",'a') as c_one:
                                 c_one.write(f"[{str(datetime.datetime.now())}] [INFO] - Student Country Updated {update_uid}")
                         except:
                             print("invalid [Error]")
@@ -187,9 +187,9 @@ def delete():
             for delete_data in data_one:
                 if delete_data["uid"]==one_uid:
                     data_one.remove(delete_data)
-                    with open("Students_.json","w") as one_file:
+                    with open("students_.json","w") as one_file:
                         json.dump(data_one,one_file,indent=4)
-                    with open("System.log",'a') as d:
+                    with open("system.log",'a') as d:
                         d.write(f"[{str(datetime.datetime.now())}] [WARNNING] - Student Deleted {one_uid}")
                     print("Student Deleted Successful!")
             else:

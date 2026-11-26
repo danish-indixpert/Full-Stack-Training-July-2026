@@ -1,4 +1,4 @@
-from Dashboard import user_dashboard
+from dashboard import user_dashboard
 
 users={
     "id":'1001',

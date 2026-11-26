@@ -1,4 +1,4 @@
-from Meeting import meeting_menu
+from meeting import meeting_menu
 def zoom_dashboard(user_id):
     print("==============================")
     print("*       Zoom Dashboard       *")

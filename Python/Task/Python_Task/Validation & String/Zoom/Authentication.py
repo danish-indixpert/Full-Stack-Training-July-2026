@@ -1,4 +1,4 @@
-from Dashboard_P import zoom_dashboard
+from dashboard_P import zoom_dashboard
 
 zoom_data={}
 zoom_user=[]

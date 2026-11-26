@@ -19,7 +19,7 @@ class Order:
         ordermenu.append(orde)
         print("Order Successfull")
     def order_process(self):
-        with open("Order.json",'w') as file:
+        with open("order.json",'w') as file:
             json.dump(ordermenu,file,indent=4)
 class Table:
     def __init__(self,big_table,medium_table,small_table):
@@ -28,7 +28,7 @@ class Table:
         self.small_table=small_table
 
     def book_table(self):
-        with open("Table.json",'r') as readfile:
+        with open("table.json",'r') as readfile:
             tables=json.load(readfile)
             print("==========")
             print("Table Menu")
@@ -46,7 +46,7 @@ class Table:
                     else:
                         table["status"]="Booked"
                     print("table book successfull")
-                with open("Order.json",'w') as file:
+                with open("order.json",'w') as file:
                     json.dump(tables,file,indent=4)
 
                 return
